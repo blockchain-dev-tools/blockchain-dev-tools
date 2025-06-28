@@ -141,7 +141,7 @@ export default function SolanaTransactionDecoder() {
       </div>
       {error && <div className="text-red-500 mt-2">{error}</div>}
       {decodedTransaction && (
-        <div className="mt-6">
+        <div className="mt-6 max-w-full">
           <h2 className="text-xl font-bold mb-3">Decoded Transaction</h2>
           <ReactJson src={decodedTransaction} theme="monokai" style={{
             padding: "12px",
